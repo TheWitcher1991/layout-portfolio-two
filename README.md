@@ -2,8 +2,8 @@
 
 This repository contains the files used to create [My personal](http://).
 
-The site uses a preprocessor - [sass]([http://](https://sass-lang.com)), to write high-quality css code.
-[sass]([http://](https://babeljs.io)) is also used to convert *ES6-7* to *ES5*.
+The site uses a preprocessor - [sass](http://https://sass-lang.com), to write high-quality css code.
+[sass](http://https://babeljs.io) is also used to convert *ES6-7* to *ES5*.
 
 ## Installation
 
