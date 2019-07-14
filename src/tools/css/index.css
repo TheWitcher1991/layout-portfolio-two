@@ -1,0 +1,68 @@
+/* font-family: "SourceSansProRegular"; */
+@font-face {
+  font-family: "SourceSansProRegular";
+  src: url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.eot");
+  src: url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.eot?#iefix") format("embedded-opentype"), url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.woff") format("woff"), url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "SourceSansProLight"; */
+@font-face {
+  font-family: "SourceSansProLight";
+  src: url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.eot");
+  src: url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.eot?#iefix") format("embedded-opentype"), url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.woff") format("woff"), url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.ttf") format("truetype");
+  font-style: norma;
+  font-weight: normal; }
+
+/* font-family: "SourceSansProBold"; */
+@font-face {
+  font-family: "SourceSansProBold";
+  src: url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.eot");
+  src: url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.eot?#iefix") format("embedded-opentype"), url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.woff") format("woff"), url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* Color */
+/* Font */
+/* Size */
+/* 1. NORMALINE */
+/* ============================================================================================================== */
+article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: normal 16px "SourceSansProRegular", Arial, sans-serif;
+  background-color: #ffffff; }
+
+/* 2. FORM */
+/* ============================================================================================================== */
+textarea {
+  outline: none;
+  resize: none; }
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+  outline: none;
+  border: 0; }
+
+input[type="button"], input[type="submit"] {
+  cursor: pointer;
+  outline: none;
+  border: 0; }
+
+/* 3. BUTTON */
+/* ============================================================================================================== */
+/* 4. MAIN */
+/* ============================================================================================================== */
+/* 5. HEADER */
+/* ============================================================================================================== */
+/* 6. ARTICLE */
+/* ============================================================================================================== */
+/* 7. FOOTER */
+/* ============================================================================================================== */
