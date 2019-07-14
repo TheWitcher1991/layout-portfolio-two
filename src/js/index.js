@@ -1,6 +1,6 @@
 /* eslint-env node, mocha */
 
-// import $ from 'jquery';
+import $ from 'jquery';
 
 window.onload = function () {
 
