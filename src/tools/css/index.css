@@ -1,36 +1,46 @@
 /* font-family: "SourceSansProRegular"; */
 @font-face {
   font-family: "SourceSansProRegular";
-  src: url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.eot");
-  src: url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.eot?#iefix") format("embedded-opentype"), url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.woff") format("woff"), url("/src/sass/import/font/SourseSansProRegular/SourceSansProRegular.ttf") format("truetype");
+  src: url("../../sass/import/font/SourseSansProRegular/SourceSansProRegular.eot");
+  src: url("../../sass/import/font/SourseSansProRegular/SourceSansProRegular.eot?#iefix") format("embedded-opentype"), url("../../sass/import/font/SourseSansProRegular/SourceSansProRegular.woff") format("woff"), url("../../sass/import/font/SourseSansProRegular/SourceSansProRegular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 /* font-family: "SourceSansProLight"; */
 @font-face {
   font-family: "SourceSansProLight";
-  src: url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.eot");
-  src: url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.eot?#iefix") format("embedded-opentype"), url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.woff") format("woff"), url("/src/sass/import/font/SourseSansProLight/SourceSansProLight.ttf") format("truetype");
+  src: url("../../sass/import/font/SourseSansProLight/SourceSansProLight.eot");
+  src: url("../../sass/import/font/SourseSansProLight/SourceSansProLight.eot?#iefix") format("embedded-opentype"), url("../../sass/import/font/SourseSansProLight/SourceSansProLight.woff") format("woff"), url("../../sass/import/font/SourseSansProLight/SourceSansProLight.ttf") format("truetype");
   font-style: norma;
   font-weight: normal; }
 
 /* font-family: "SourceSansProBold"; */
 @font-face {
   font-family: "SourceSansProBold";
-  src: url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.eot");
-  src: url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.eot?#iefix") format("embedded-opentype"), url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.woff") format("woff"), url("/src/sass/import/font/SourseSansProBold/SourceSansProBold.ttf") format("truetype");
+  src: url("../../sass/import/font/SourseSansProBold/SourceSansProBold.eot");
+  src: url("../../sass/import/font/SourseSansProBold/SourceSansProBold.eot?#iefix") format("embedded-opentype"), url("../../sass/import/font/SourseSansProBold/SourceSansProBold.woff") format("woff"), url("../../sass/import/font/SourseSansProBold/SourceSansProBold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal; }
 
 /* Color */
 /* Font */
 /* Size */
+/* Border */
+/* Module */
 /* 1. NORMALINE */
 /* ============================================================================================================== */
 article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
 *, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -apple-box-sizing: border-box;
+  -khtml-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -rim-box-sizing: border-box;
+  -xv-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box; }
 
 html, body {
@@ -39,7 +49,16 @@ html, body {
   margin: 0;
   padding: 0;
   font: normal 16px "SourceSansProRegular", Arial, sans-serif;
-  background-color: #ffffff; }
+  background-color: #212121;
+  color: #ffffff;
+  overflow-x: hidden; }
+
+.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /* 2. FORM */
 /* ============================================================================================================== */
@@ -58,11 +77,143 @@ input[type="button"], input[type="submit"] {
 
 /* 3. BUTTON */
 /* ============================================================================================================== */
+button {
+  outline: none;
+  border: 0; }
+
 /* 4. MAIN */
 /* ============================================================================================================== */
+.wrapper {
+  background-size: cover;
+  background-image: url("");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-color: #212121;
+  width: 100%;
+  height: 100%; }
+
 /* 5. HEADER */
 /* ============================================================================================================== */
+#header {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0;
+  background-color: #212121;
+  color: #ffffff;
+  position: relative;
+  z-index: 100;
+  border: 10px solid transparent;
+  border-image: radial-gradient(circle, transparent 35%, #adf2f7 100%);
+  border-image-slice: 1; }
+  #header .container {
+    position: relative;
+    padding: 90px 0 30px 0; }
+    #header .container .website__nav {
+      display: none; }
+    #header .container .website__banner {
+      position: relative;
+      margin: 0 0 100px 0; }
+      #header .container .website__banner .website__banner__div {
+        max-width: 490px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 40px;
+        font-family: "SourceSansProBold", Arial, sans-serif;
+        position: relative; }
+        #header .container .website__banner .website__banner__div h1 {
+          position: relative;
+          text-transform: uppercase; }
+          #header .container .website__banner .website__banner__div h1:before {
+            content: "";
+            position: relative;
+            top: -10px;
+            left: 0;
+            display: block;
+            width: 200px;
+            height: 4px;
+            background-color: #fdff00; }
+          #header .container .website__banner .website__banner__div h1:after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+            display: block;
+            width: 200px;
+            height: 4px;
+            background-color: #fdff00; }
+    #header .container .website__social {
+      max-width: 490px;
+      margin: 0 auto;
+      display: block; }
+      #header .container .website__social ul {
+        display: flex;
+        list-style: none; }
+        #header .container .website__social ul li {
+          position: relative;
+          text-align: center; }
+          #header .container .website__social ul li a {
+            display: block;
+            font-size: 25px;
+            color: #ffffff;
+            border-radius: 50%;
+            margin: 0 20px;
+            text-align: center;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            border: 2px solid #475b5c;
+            transition: all 0.3s linear; }
+          #header .container .website__social ul li:nth-child(1):hover a {
+            background-color: #3d5a99; }
+          #header .container .website__social ul li:nth-child(2):hover a {
+            background-color: #4a729f; }
+          #header .container .website__social ul li:nth-child(3):hover a {
+            background-color: #212735; }
+          #header .container .website__social ul li:nth-child(4):hover a {
+            background-color: #d7493c; }
+
 /* 6. ARTICLE */
 /* ============================================================================================================== */
+#article {
+  width: 100%;
+  height: none;
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: #ffffff; }
+
 /* 7. FOOTER */
 /* ============================================================================================================== */
+#footer {
+  width: 100%;
+  height: none;
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: #ffffff; }
+
+/* 8. MEDIA */
+/* ============================================================================================================== */
+@media all and (max-width: 320px) {
+  #wrapper {
+    color: #fff; } }
+
+@media all and (max-width: 640px) {
+  #wrapper {
+    color: #fff; } }
+
+@media all and (max-width: 800px) {
+  #wrapper {
+    color: #fff; } }
+
+@media all and (max-width: 1024px) {
+  #wrapper {
+    color: #fff; } }
+
+@media all and (max-width: 1280px) {
+  #wrapper {
+    color: #fff; } }
+
+@media all and (min-width: 1920px) {
+  #wrapper {
+    color: #fff; } }

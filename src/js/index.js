@@ -1,14 +1,21 @@
 /* eslint-env node, mocha */
 
-import $ from 'jquery';
+'use strict';
 
-window.onload = function () {
+class Main {
+    constructor(name) {
+        this.name = name
+    }
 
-	'use strict';
+    get render() {
+        console.log(this.name)
+        return true;
+    }
+}
 
-	const $page = $('html', 'body');
+(function () {
 
-	$(document).ready(function () {
-		
-	});
-};
+    const app = new Main('website');
+    if (app) app.render;
+
+}());

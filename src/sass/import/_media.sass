@@ -1,0 +1,26 @@
+@function breakpoint-var($breakpoint) 
+   @return map-get($grid-breakpoints, $breakpoint)
+
+@media all and (max-width: breakpoint-var("ms")) 
+	#wrapper
+		color: #fff
+
+@media all and (max-width: breakpoint-var("ml")) 
+	#wrapper
+		color: #fff
+
+@media all and (max-width: breakpoint-var("mt")) 
+	#wrapper
+		color: #fff
+
+@media all and (max-width: breakpoint-var("lp")) 
+	#wrapper
+		color: #fff
+
+@media all and (max-width: breakpoint-var("lg")) 
+	#wrapper
+		color: #fff
+
+@media all and (min-width: breakpoint-var("fl")) 
+	#wrapper
+		color: #fff

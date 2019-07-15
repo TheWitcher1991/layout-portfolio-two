@@ -1,0 +1,83 @@
+#header
+	+header(30px auto, 0, relative)
+	+border-section()
+
+	.container
+			position: relative
+			padding: 90px 0 30px 0
+
+			.website__nav
+				display: none
+
+			.website__banner 
+				position: relative
+				margin: 0 0 100px 0
+
+				.website__banner__div
+					max-width: 490px
+					margin: 0 auto
+					text-align: center
+					font-size: 40px
+					font-family: $font-bold
+					position: relative
+
+					h1 
+						position: relative
+						text-transform: uppercase
+
+						&:before
+							content: ""
+							position: relative
+							top: -10px
+							left: 0
+							display: block
+							width: 200px
+							height: 4px
+							background-color: $basic-fg
+
+						&:after 
+							content: ""
+							position: absolute
+							bottom: -20px
+							right: 0
+							display: block
+							width: 200px
+							height: 4px
+							background-color: $basic-fg
+
+			.website__social
+				max-width: 490px
+				margin: 0 auto
+				display: block
+
+				ul 
+					display: flex 
+					list-style: none
+
+					li 
+						position: relative
+						text-align: center
+
+						a 
+							display: block
+							font-size: 25px
+							color: $fg-website
+							border-radius: 50%
+							margin: 0 20px
+							text-align: center
+							width: 65px
+							height: 65px
+							line-height: 65px
+							border: 2px solid #475b5c
+							transition: all 0.3s linear
+
+						&:nth-child(1):hover a
+							background-color: #3d5a99
+						&:nth-child(2):hover a
+							background-color: #4a729f
+						&:nth-child(3):hover a
+							background-color: #212735
+						&:nth-child(4):hover a
+							background-color: #d7493c
+
+						

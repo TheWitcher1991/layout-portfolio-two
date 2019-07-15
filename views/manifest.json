@@ -1,0 +1,16 @@
+{
+    "short_name": "my-webste",
+    "name": "Website portfolio",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "96x96 64x64 48x48 32x32 24x24 16x16",
+        "type": "image/ico"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#212121"
+  }
+  

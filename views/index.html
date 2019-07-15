@@ -2,7 +2,7 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="ru"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="ru"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru" class="no-js" dir="ltr"><!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru-RU" prefix="og: http://ogp.me/ns#" dir="ltr"><!--<![endif]-->
 <head>
 	<!-- Meta tags -->
 	<meta charset="utf-8" />
@@ -19,16 +19,66 @@
  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
 
-    <meta name="msapplication-config" content="/views/browserconfig.xml" />
-
     <!-- Favicon website -->
-	<link rel="shortcut icon" href="src/views/" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+    <link rel="manifest" href="manifest.json">
 
     <!-- Css -->
-    <link rel="stylesheet" type="text/css" href="/src/tools/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../src/tools/css/index.css">
 
     <!-- Module -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    
+</head>
+<body>
+
+    <!-- Content website --> 
+    <main class="wrapper" id="particles-js" role="main">
+        <!-- Header website --> 
+        <header id="header" class="header" role="header">
+            <section class="header__section">
+                <div class="container">
+                    <nav class="website__nav">
+                        <div class="website__div__ul">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="website__banner">
+                        <div class="website__banner__div">
+                            <h1>my portfolio</h1>
+                        </div>
+                    </div>
+                    <div class="website__social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="#"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <!-- Article website --> 
+        <article id="article" class="article" role="article">
+            <section class="article__section"></section>
+        </article>
+
+        <!-- Footer website --> 
+        <footer id="footer" class="footer" role="footer">
+            <section class="footer__section"></section>
+        </footer>
+    </main>
+
+    <!--[if lte IE 8]>
+	    <script type="text/javascript" src="https://developer.mozilla.org/static/build/js/selectivizr.8bb9e662e963.js" charset="utf-8"></script>
+    <![endif]-->
 
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
@@ -36,11 +86,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-</head>
-<body>
 
     <!-- Scripts -->
-    <script src="/src/libs/jquery.min.js"></script>
-    <script src="/src/tools/js/index.js"></script>
+    <script src="../src/libs/particles.min.js"></script>
+    <script src="../app.js"></script>
+    <script src="../src/tools/js/index.js"></script>
 </body>
 </html>

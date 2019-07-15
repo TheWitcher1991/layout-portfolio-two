@@ -1,9 +1,53 @@
-=page($wdith, $height, $margin, $padding)
-    width: $wdith
-    height: $height
-    margin: $margin
-    padding: $padding
+=page($size1, $size2, $over)
+    width: $size1
+    height: $size1
+    margin:  $size2
+    padding:  $size2
     font: $font-website
     background-color: $bg-website
+    color: $fg-website
+    overflow-x: $over
 
-    
+=main($size, $url, $pos, $repeat, $width, $height)
+	background-size: $size
+	background-image: $url
+	background-position: $pos
+	background-repeat: $repeat
+	background-color: $bg-website
+	width: $width
+	height: $height
+
+=header($margin, $padding, $pos)
+	max-width: $max-size
+	margin: $margin 
+	padding: $padding 
+	background-color: $bg-website
+	color: $fg-website
+	position: $pos
+	z-index: $index-section
+
+=article($width, $height, $margin, $padding, $background, $color)
+	width: $width 
+	height: $height 
+	margin: $margin 
+	padding: $padding 
+	background-color: $background
+	color: $color
+
+=footer($width, $height, $margin, $padding, $background, $color)
+	width: $width 
+	height: $height 
+	margin: $margin 
+	padding: $padding 
+	background-color: $background
+	color: $color
+
+=border-section()
+	border: $border-section
+	border-image: $border-image-section
+	border-image-slice: $border-image-slice-section
+
+=prefix($name, $value)
+	@each $key in $vendors
+		#{$key}#{$name}: #{$value}
+
