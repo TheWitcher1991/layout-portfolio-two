@@ -14,8 +14,8 @@
     },
     "rules": {
         "indent": [
-            "error",
-            "space"
+            "space",
+            4
         ],
         "quotes": [
             "error",

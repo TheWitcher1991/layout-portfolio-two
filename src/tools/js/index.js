@@ -1,31 +1,31 @@
 /* eslint-env node, mocha */
 
+// ! Точки с запятой можно не ставить ./src/js/*.{js, jsx}
+
 'use strict';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+$(document).ready(function () {
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+    var $page = $('html, body');
 
-var Main = function () {
-    function Main(name) {
-        _classCallCheck(this, Main);
-
-        this.name = name;
-    }
-
-    _createClass(Main, [{
-        key: 'render',
-        get: function get() {
-            console.log(this.name);
-            return true;
+    $('.menu__open__bth').click(function (e) {
+        e.preventDefault();
+        $('.website__ul').toggleClass('active');
+        if ($('.website__ul').hasClass('active')) {
+            $('.nav__line__top').attr('class', 'top__active line');
+            $('.nav__line__middle').attr('class', 'middle__active line');
+            $('.nav__line__bottom').attr('class', 'bottom__active line');
+        } else {
+            $('.top__active').attr('class', 'nav__line__top line');
+            $('.middle__active').attr('class', 'nav__line__middle line');
+            $('.bottom__active').attr('class', 'nav__line__bottom line');
         }
-    }]);
+    });
 
-    return Main;
-}();
-
-(function () {
-
-    var app = new Main('website');
-    if (app) app.render;
-})();
+    $('.website__ul').on('click', 'a', function (e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $page.animate({ scrollTop: top }, 500);
+    });
+});

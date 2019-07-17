@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="ru"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="ru"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru-RU" prefix="og: http://ogp.me/ns#" dir="ltr"><!--<![endif]-->
+<!DOCTYPE html><!--[if IE 9]>
+<html class="no-js ie ie9" lang="ru" prefix="og: http://ogp.me/ns#" dir="ltr"><![endif]--><!--[if IE 8]>
+<html class="no-js ie ie8" lang="ru" prefix="og: http://ogp.me/ns#" dir="ltr"><![endif]--><!--[if IE 7]>
+<html class="no-js ie ie7" lang="ru" prefix="og: http://ogp.me/ns#" dir="ltr"><![endif]--><!--[if IE 6]>
+<html class="no-js ie ie6" lang="ru" prefix="og: http://ogp.me/ns#" dir="ltr"><![endif]--><!--[if (gte IE 10)|!(IE)]><!-->
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js no-ie" lang="ru" prefix="og: http://ogp.me/ns#" dir="ltr"><!--<![endif]-->
 <head>
 	<!-- Meta tags -->
 	<meta charset="utf-8" />
@@ -11,41 +12,60 @@
 	<meta name="description" content="" />
     <meta name="keywords" content="" />
 
-    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
     <meta http-equiv="content-language" content="ru" />
 
+    <meta property="og:title" content="My website" />
     <meta property="og:type" content="website" />
-
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
 
     <!-- Favicon website -->
     <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
     <link rel="manifest" href="manifest.json">
 
     <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="../src/font/font.css">
     <link rel="stylesheet" type="text/css" href="../src/tools/css/index.css">
 
     <!-- Module -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    
+
+    <!--[if lte IE 8]>
+        <script src="https://www.mozilla.org/media/js/libs/html5shiv.98460818858d.js"></script>    
+        <link rel="stylesheet" type="text/css" href="../src/tools/css/index.css"> 
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script type="text/javascript" src="https://developer.mozilla.org/static/build/js/selectivizr.8bb9e662e963.js" charset="utf-8"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+
 </head>
-<body>
+<body data-spy="scroll">
+
+    <!--[if IE]>
+        <p>Пожалуйста, <a href="http://firefox.com">обновите ваш браузер</a> до новой версии.</p>
+    <![endif]-->
 
     <!-- Content website --> 
     <main class="wrapper" id="particles-js" role="main">
         <!-- Header website --> 
         <header id="header" class="header" role="header">
-            <section class="header__section">
+            <section class="header__section" id="home">
                 <div class="container">
                     <nav class="website__nav">
-                        <div class="website__div__ul">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
+                        <ul class="website__ul">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <div class="menu__open__bth">
+                            <span class="line nav__line__top"></span>
+                            <span class="line nav__line__middle"></span>
+                            <span class="line nav__line__bottom"></span>
                         </div>
                     </nav>
                     <div class="website__banner">
@@ -76,20 +96,11 @@
         </footer>
     </main>
 
-    <!--[if lte IE 8]>
-	    <script type="text/javascript" src="https://developer.mozilla.org/static/build/js/selectivizr.8bb9e662e963.js" charset="utf-8"></script>
-    <![endif]-->
-
-    <!--[if lt IE 9]>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
-
-    <!-- Scripts -->
-    <script src="../src/libs/particles.min.js"></script>
-    <script src="../app.js"></script>
-    <script src="../src/tools/js/index.js"></script>
+    <!--[if !IE]><!--> 
+        <script src="../src/libs/jquery.min.js"></script>
+        <script src="../src/libs/particles.min.js"></script>
+        <script src="../app.js"></script>
+        <script src="../src/tools/js/index.js"></script>
+    <!--<![endif]-->
 </body>
 </html>

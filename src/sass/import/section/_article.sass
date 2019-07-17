@@ -1,2 +1,9 @@
 #article
-	+article(100%, none, 0, 0, $bg-website, $fg-website)
+	width: 100%
+	padding: 100px 0 100px 0
+	z-index: $index-section
+	position: relative
+
+	.article__section
+		+article(0 auto, 200px 0, relative)
+		+border-section()

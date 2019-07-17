@@ -1,4 +1,3 @@
-@import "import/font/_font.sass"
 @import "import/_vars.sass"
 @import "import/_mixins.sass"
 
@@ -11,14 +10,12 @@ article, aside, details, main, figcaption, figure, footer, header, hgroup, menu,
 	+prefix("box-sizing", 'border-box')
 
 html, body 
-    +page(100%, 0, hidden)
+	+page(100%, 0, hidden)
 
 .particles-js-canvas-el
 	position: absolute 
 	top: 0
 	left: 0
-	width: 100%
-	height: 100%
 
 /* 2. FORM */
 /* ============================================================================================================== */
@@ -44,7 +41,8 @@ button
 /* 4. MAIN */
 /* ============================================================================================================== */
 .wrapper 
-	+main(cover, url(''), 50% 50%, no-repeat, 100%, 100%)	
+	width: 100%
+	height: 100%
 
 /* 5. HEADER */
 /* ============================================================================================================== */

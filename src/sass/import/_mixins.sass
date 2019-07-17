@@ -1,12 +1,12 @@
 =page($size1, $size2, $over)
-    width: $size1
-    height: $size1
-    margin:  $size2
-    padding:  $size2
-    font: $font-website
-    background-color: $bg-website
-    color: $fg-website
-    overflow-x: $over
+	width: $size1
+	height: $size1
+	margin: $size2
+	padding: $size2
+	font: $font-website
+	background-color: $bg-website
+	color: $fg-website
+	overflow-x: $over
 
 =main($size, $url, $pos, $repeat, $width, $height)
 	background-size: $size
@@ -26,13 +26,14 @@
 	position: $pos
 	z-index: $index-section
 
-=article($width, $height, $margin, $padding, $background, $color)
-	width: $width 
-	height: $height 
+=article($margin, $padding, $pos)
+	max-width: $max-size
 	margin: $margin 
 	padding: $padding 
-	background-color: $background
-	color: $color
+	background-color: $bg-website
+	color: $fg-website
+	position: $pos
+	z-index: $index-section
 
 =footer($width, $height, $margin, $padding, $background, $color)
 	width: $width 

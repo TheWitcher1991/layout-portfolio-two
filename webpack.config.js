@@ -1,16 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: [
-        './src/tools/js/*.js',
+        './src/tools/js/index.js',
         './src/tools/css/index.css'
     ],
     output: {
@@ -37,7 +34,7 @@ module.exports = {
                         name: 'static/img/[name].[ext]',
                     }
                 }]
-            }
+            },
         ]
     },
     resolve: {
