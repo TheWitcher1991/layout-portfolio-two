@@ -3,7 +3,7 @@
 This repository contains the files used to create [My personal website](https://thewitcher1991.github.io/myWebsite/views/).
 
 The site uses a preprocessor - [sass](http://https://sass-lang.com)(3.5.5), to write high-quality css code.
-[sass](http://https://babeljs.io)(7.5.0) is also used to convert *ES6-10* to *ES5*.
+[Babel](https://babeljs.io/)(7.5.0) is also used to convert *ES6-10* to *ES5*.
 
 ## Installation
 
