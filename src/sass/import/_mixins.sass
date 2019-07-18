@@ -35,13 +35,15 @@
 	position: $pos
 	z-index: $index-section
 
-=footer($width, $height, $margin, $padding, $background, $color)
-	width: $width 
-	height: $height 
-	margin: $margin 
-	padding: $padding 
-	background-color: $background
-	color: $color
+=footer($width, $pos, $padding, $bord)
+	width: $width
+	position: $pos
+	padding: $padding
+	border-image: $bord
+	border-top: $border-section   
+	border-image-slice: $border-image-slice-section
+	background: $bg-website
+	z-index: $index-section
 
 =border-section()
 	border: $border-section

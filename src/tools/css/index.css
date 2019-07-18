@@ -163,7 +163,6 @@ button {
         margin: 0 auto;
         text-align: center;
         font-size: 40px;
-        -ms-font-size: 20px;
         font-family: "SourceSansProBold", Arial, sans-serif;
         position: relative; }
         #header .container .website__banner .website__banner__div h1 {
@@ -245,11 +244,16 @@ button {
 /* ============================================================================================================== */
 #footer {
   width: 100%;
-  height: none;
-  margin: 0;
-  padding: 0;
-  background-color: #212121;
-  color: #ffffff; }
+  position: relative;
+  padding: 100px 0;
+  border-image: radial-gradient(circle, transparent 17%, #adf2f7 100%);
+  border-top: 10px solid transparent;
+  border-image-slice: 1;
+  background: #212121;
+  z-index: 100; }
+  #footer .footer__section {
+    max-width: 1150px;
+    margin: 0 auto; }
 
 /* 8. MEDIA */
 /* ============================================================================================================== */
