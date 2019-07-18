@@ -1,6 +1,6 @@
 # My personal website [![Build Status](https://travis-ci.org/mono/website.svg)](https://travis-ci.org/mono/website)
 
-This repository contains the files used to create [My personal](http://).
+This repository contains the files used to create [My personal website](https://thewitcher1991.github.io/myWebsite/views/).
 
 The site uses a preprocessor - [sass](http://https://sass-lang.com)(3.5.5), to write high-quality css code.
 [sass](http://https://babeljs.io)(7.5.0) is also used to convert *ES6-10* to *ES5*.
@@ -10,12 +10,12 @@ The site uses a preprocessor - [sass](http://https://sass-lang.com)(3.5.5), to w
 You will need [Node.js](https://nodejs.org) installed on your computer to download this repository.
 
 ```bash
-$ git clone https://github.com/TheWitcher1991/my-website
-$ cd my-website
-$ npm install 
+$ git clone https://github.com/TheWitcher1991/myWebsite
+$ cd myWebsite
+$ npm install | yarn
 ```
 
-If you don't wish to clone, you can [download the source code](https://github.com/TheWitcher1991/my-website/archive/master.zip).
+If you don't wish to clone, you can [download the source code](https://github.com/TheWitcher1991/myWebsite/archive/master.zip).
 
 ## Repository structure
 
