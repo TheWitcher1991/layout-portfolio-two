@@ -6,7 +6,7 @@
 
 $(document).ready(() => {
 
-    const $page = $('html, body');
+    const $page = $('html, body')
 
     $('.menu__open__bth').click((e) => {
         e.preventDefault()
