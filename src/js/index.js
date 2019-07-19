@@ -4,13 +4,13 @@
 
 'use strict'
 
-$(document).ready(() => {
+$(document).ready(function () {
 
-    const $page = $('html, body')
+    let $page = $('html, body')
 
     $('.menu__open__bth').click((e) => {
         e.preventDefault()
-        $('.website__ul').toggleClass('active');
+        $('.website__ul').toggleClass('active')
         if ($('.website__ul').hasClass('active')) {
             $('.nav__line__top').attr('class', 'top__active line')
             $('.nav__line__middle').attr('class', 'middle__active line')

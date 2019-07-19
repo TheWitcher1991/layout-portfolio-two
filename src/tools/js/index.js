@@ -5,6 +5,7 @@
 'use strict';
 
 $(document).ready(function () {
+    var _this = this;
 
     var $page = $('html, body');
 
@@ -24,7 +25,7 @@ $(document).ready(function () {
 
     $('.website__ul').on('click', 'a', function (e) {
         e.preventDefault();
-        var id = $(this).attr('href'),
+        var id = $(_this).attr('href'),
             top = $(id).offset().top;
         $page.animate({ scrollTop: top }, 500);
     });
