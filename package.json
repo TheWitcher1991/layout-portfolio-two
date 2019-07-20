@@ -7,8 +7,12 @@
   "scripts": {
     "watch-webpack": "webpack --mode production --watch",
     "build-webpack": "webpack --mode production",
-    "build-babel": "babel src/js -d src/tools/js --presets es2015",
-    "watch-babel": "babel src/js -d src/tools/js --presets es2015 -w",
+    "build-babel": "babel app/src/js -d app/src/tools/js --presets es2015",
+    "watch-babel": "babel app/src/js -d app/src/tools/js --presets es2015 -w",
+    "sass": "gulp sass",
+    "default": "gulp default",
+    "build": "gulp build",
+    "delete": "gulp clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +34,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.7",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.0.0",
     "eslint": "^6.0.1",
@@ -38,7 +43,13 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^4.0.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cache": "^1.1.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-uglifyjs": "^0.6.2",
     "html-webpack-plugin": "^3.2.0",
     "jquery": "^3.4.1",
     "mini-css-extract-plugin": "^0.7.0",
@@ -49,6 +60,7 @@
     "webpack-md5-hash": "0.0.6"
   },
   "dependencies": {
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "del": "^5.0.0"
   }
 }

@@ -3,11 +3,27 @@
 
 /* 1. NORMALINE */
 /* ============================================================================================================== */
+::-moz-selection
+	background-color: $basic-fg
+	color: $fg-website
+
+::-ms-selection
+	background-color: $basic-fg
+	color: $fg-website
+
+::-o-selection
+	background-color: $basic-fg
+	color: $fg-website
+
+::selection
+	background-color: $basic-fg
+	color: $fg-website
+	
 article, aside, details, main, figcaption, figure, footer, header, hgroup, menu, nav, section
 	display: block
 
 *, *:before, *:after
-	+prefix("box-sizing", 'border-box')
+	+prefix('box-sizing', 'border-box')
 
 html, body 
 	+page(100%, 0, hidden)
@@ -16,6 +32,15 @@ html, body
 	position: absolute 
 	top: 0
 	left: 0
+
+::-webkit-scrollbar
+	width: 0.8em
+
+::-webkit-scrollbar-track
+	box-shadow: inset 0 0 1px #fff
+
+::-webkit-scrollbar-thumb
+	background-color: $basic-fg
 
 /* 2. FORM */
 /* ============================================================================================================== */

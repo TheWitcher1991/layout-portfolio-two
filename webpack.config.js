@@ -7,8 +7,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: [
-        './src/tools/js/index.js',
-        './src/tools/css/index.css'
+        './app/src/tools/js/index.js',
+        './app/src/tools/css/index.css'
     ],
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -47,13 +47,13 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './views/index.html',
+            template: './app/index.html',
             filename: 'index.html'
         }),
         new webpack.ProvidePlugin({
-            $: 'src/libs/jquery.min.js',
-            jQuery: 'src/libs/jquery.min.js',
-            'window.$': 'src/libs/jquery.min.js'
+            $: './app/src/libs/libs.min.js',
+            jQuery: './app/src/libs/libs.min.js',
+            'window.$': './app/src/libs/libs.min.js'
         })
     ]
 }

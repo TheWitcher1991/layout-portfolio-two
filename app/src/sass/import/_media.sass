@@ -1,30 +1,37 @@
 @function breakpoint-var($breakpoint) 
    @return map-get($grid-breakpoints, $breakpoint)
 
+/* size 320px */
 @media only screen and (max-width: breakpoint-var("ms")) and (orientation: landscape) 
 	#wrapper
 		color: #fff
 
+/* size 480px */
 @media only screen and (max-width: breakpoint-var("mf")) and (orientation: landscape)
 	#wrapper
 		color: #fff
 
+/* size 640px */
 @media only screen and (max-width: breakpoint-var("ml")) and (orientation: landscape)
 	#wrapper
 		color: #fff
 
+/* size 800px */
 @media only screen and (max-width: breakpoint-var("mt")) and (orientation: landscape) 
 	#wrapper
 		color: #fff
 
+/* size 1024px */
 @media only screen and (max-width: breakpoint-var("lp")) and (orientation: landscape) 
 	#wrapper
 		color: #fff
 
+/* size 1280px */
 @media only screen and (max-width: breakpoint-var("lg")) and (orientation: landscape) 
 	#wrapper
 		color: #fff
 
+/* size 1920 */
 @media only screen and (min-width: breakpoint-var("fl")) and (orientation: landscape) 
 	#wrapper
 		color: #fff

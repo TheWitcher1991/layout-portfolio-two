@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     $('.website__ul').on('click', 'a', function (e) {
         e.preventDefault();
-        var id = $(_this).attr('href'),
+        var id = $(this).attr('href'),
             top = $(id).offset().top;
         $page.animate({ scrollTop: top }, 500);
     });
