@@ -79,5 +79,6 @@ gulp.task('watch', function () {
 
 // ! Таск для для выполения task('watch')
 gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
+
 // TODO: полная сборка проекта в ./build
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'sass'));
