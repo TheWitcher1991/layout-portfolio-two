@@ -10,6 +10,7 @@
     "build-babel": "babel app/src/js -d app/src/tools/js --presets es2015",
     "watch-babel": "babel app/src/js -d app/src/tools/js --presets es2015 -w",
     "sass": "gulp sass",
+    "watch": "gulp watch",
     "default": "gulp default",
     "build": "gulp build",
     "delete": "gulp clean",
