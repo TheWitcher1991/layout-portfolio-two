@@ -95,9 +95,9 @@ gulp.task('prebuild', async function() {
 // ! Таск для очистки кеша
 gulp.task('clear', function (callback) {
 	return cache.clearAll();
-})
+});
 
-// ! Таск для наблюдение -> компиляция -> перезагрузка сервера
+// ! Таск наблюдение -> компиляция -> перезагрузка сервера
 gulp.task('watch', function () {
     gulp.watch(PATHS.sass.src, gulp.parallel('sass'));
     gulp.watch(PATHS.html.src, gulp.parallel('code'));

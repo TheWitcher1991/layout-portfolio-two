@@ -5,5 +5,94 @@
 	position: relative
 
 	.article__section
-		+article(0 auto, 60px 0, relative)
+		+article(0 auto, 0, relative)
 		+border-section()
+
+		#portfolio
+			position: relative
+
+			.portfolio__title 
+				font-size: 40px
+				text-align: center
+				text-transform: uppercase
+				position: relative
+				max-width: 320px
+				margin: 0 auto
+				font-family: $font-bold 
+				padding: 50px 0 0 0
+				color: $fg-website
+
+				&:after
+					content: ""
+					position: absolute
+					right: 0
+					top: 35px
+					background-color: $basic-fg
+					height: 4px
+					width: 155px
+
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					bottom: -15px
+					background-color: $basic-fg
+					height: 4px
+					width: 155px
+			
+			.portfolio__img 
+				display: flex
+				justify-content: space-between
+				justify-items: center
+				max-width: 950px
+				padding: 60px 0 0 0
+				margin: 0 auto
+
+				.block
+					background-color: #cecece
+					width: 280px 
+					height: 270px
+					text-align: center
+					border-radius: 10px
+					line-height: 270px
+					font-size: 50px
+					transition: all 0.3s
+					cursor: pointer
+
+					i 
+						transition: all 0.3s
+
+					&:hover i
+						transform: scale(1.9)
+						color: $basic-fg
+
+		#about 
+			position: relative
+
+			.about__title
+				font-size: 40px
+				max-width: 290px
+				padding: 0
+				position: relative
+				font-family: $font-bold
+				text-transform: uppercase
+				text-align: center
+				margin: 55px auto
+
+				&:after
+					content: ""
+					position: absolute
+					right: 0
+					top: -15px
+					background-color: $basic-fg
+					height: 4px
+					width: 140px
+
+				&:before
+					content: ""
+					position: absolute
+					left: 0
+					bottom: -15px
+					background-color: $basic-fg
+					height: 4px
+					width: 140px

@@ -56,8 +56,8 @@
                     <nav class="website__nav">
                         <ul class="website__ul">
                             <li><a href="#home">Home</a></li>
-                            <li><a href="#">Portfolio</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
                             <li><a href="#footer">Contact</a></li>
                         </ul>
                         <div class="menu__open__bth">
@@ -86,8 +86,22 @@
         <!-- Article website --> 
         <article id="article" class="article" role="article">
             <section class="article__section">
-                <div id="portfolio"></div>
-                <div id="about"></div>
+                <div id="portfolio">
+                    <h2 class="portfolio__title">It my works</h2>
+                    <div class="portfolio__img">
+                        <div class="block"><i class="fas fa-camera"></i></div>
+                        <div class="block"><i class="fas fa-camera"></i></div>
+                        <div class="block"><i class="fas fa-camera"></i></div>
+                    </div>
+                </div>
+                <div id="about">
+                    <h2 class="about__title">about me</h2>
+                    <div class="about__list">
+                        <div class="block"></div>
+                        <div class="block"></div>
+                        <div class="block"></div>
+                    </div>
+                </div>
             </section>
         </article>
 
@@ -106,17 +120,8 @@
     <!--[if !IE]-->
         <script src="./src/libs/libs.min.js"></script>
         <script src="./src/tools/js/index.js"></script>
-
         <script>
-            if (jQuery.browser) {
-                window.$5 = function (html5) {
-                    return jQuery(innerShiv(html5, false));
-                }
-            } else {
-                window.$5 = function (html5) {
-                    return jQuery(html5);
-                }
-            }
+            if (jQuery.browser) {window.$5 = function (html5) {return jQuery(innerShiv(html5, false));}} else {window.$5 = function (html5) {return jQuery(html5);}}
         </script>
     <!--[endif]--> 
 
