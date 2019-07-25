@@ -32,14 +32,14 @@
 
 	<script type="text/javascript" src="data.json"></script>
 	<script type="text/javascript">
-		function loadJSON () {
-			const myData = JSON.parse(data);
-			console.log(myData.length);
+		!function () {
+			var MYDATA = JSON.parse(data);
+			console.log(MYDATA.length + '\n' + typeof MYDATA);
 
-			for (let i in myData) {
-				console.log(`JSON_${i} - ${myData[i].name}, ${myData[i].age}, ${data}`);
+			for (var i = 0; i < MYDATA.length; i++) {
+				console.log('JSON_' + i + ' - ' + MYDATA[i].name + ', ' + MYDATA[i].age + ', ' + data);
 			}
-		};
+		}(document, window, 'script');
 	</script>
 
     <!--[if lte IE 8]>
@@ -54,7 +54,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 </head>
-<body onload="loadJSON()">
+<body>
     <!--[if IE]>
         <p>Пожалуйста, обновите ваш браузер до новой версии.</p>
     <![endif]-->
@@ -163,11 +163,11 @@
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
-        (function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter54499777 = new Ya.Metrika({id:54499777,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});} catch(e) { }});
+        !function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter54499777 = new Ya.Metrika({id:54499777,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});} catch(e) { }});
             var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function () { n.parentNode.insertBefore(s, n); };
             s.type = "text/javascript";s.async = true;s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
             if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
+        }(document, window, "yandex_metrika_callbacks");
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/54499777" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
