@@ -31,20 +31,24 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
 
 	<script type="text/javascript" src="data.json"></script>
+	<!-- Load data.json -->
 	<script type="text/javascript">
-		!function () {
-			var MYDATA = JSON.parse(data);
-			console.log(MYDATA.length + '\n' + typeof MYDATA);
+		'use strict';
 
-			for (var i = 0; i < MYDATA.length; i++) {
-				console.log('JSON_' + i + ' - ' + MYDATA[i].name + ', ' + MYDATA[i].age + ', ' + data);
-			}
-		}(document, window, 'script');
+		var myData = JSON.parse(data);
+
+		typeof myData === 'undefined' ? MYDATA(!data) :
+			!function () {
+				console.log(myData.length + '\n' + typeof myData);
+				for (var i = 0; i < myData.length; i++) {
+					console.log('JSON_' + i + ' - ' + myData[i].name + ', ' + myData[i].age + ', ' + data);
+				}
+			}(document, window, 'script');
 	</script>
 
     <!--[if lte IE 8]>
         <script src="https://www.mozilla.org/media/js/libs/html5shiv.98460818858d.js"></script>
-        <link rel="stylesheet" type="text/css" href="../src/tools/css/index.css">
+        <link rel="stylesheet" type="text/css" href="./src/tools/css/index.min.css">
     <![endif]-->
 
     <!--[if lt IE 9]>
@@ -55,6 +59,11 @@
     <![endif]-->
 </head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S7487Q"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
     <!--[if IE]>
         <p>Пожалуйста, обновите ваш браузер до новой версии.</p>
     <![endif]-->
@@ -153,23 +162,32 @@
         </footer>
     </main>
 
-    <!--[if !IE]-->
-        <script src="./src/libs/libs.min.js"></script>
-        <script src="./src/tools/js/index.js"></script>
-        <script type="text/javascript">
-            if (jQuery.browser) {window.$5 = function (html5) {return jQuery(innerShiv(html5, false));}} else {window.$5 = function (html5) {return jQuery(html5);}}
-        </script>
-    <!--[endif]-->
+    <!-- Common scripts -->
+    <script src="./src/libs/libs.min.js"></script>
+    <script src="./src/tools/js/index.js"></script>
+    <script type="text/javascript">
+		jQuery.browser ? window.$5 = function (html5) {return jQuery(innerShiv(html5, false))} : window.$5 = function (html5) {return jQuery(html5)}
+	</script>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
-        !function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter54499777 = new Ya.Metrika({id:54499777,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});} catch(e) { }});
+        (function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter54499777 = new Ya.Metrika({id:54499777,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});} catch(e) { }});
             var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function () { n.parentNode.insertBefore(s, n); };
             s.type = "text/javascript";s.async = true;s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
             if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); }
-        }(document, window, "yandex_metrika_callbacks");
+        })(document, window, "yandex_metrika_callbacks");
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/54499777" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+	<!-- Google.TagManager counter -->
+	<script>
+		(function (w, d, s, l, i) {w[l] = w[l] || [];w[l].push({'gtm.start' : new Date().getTime(),event : 'gtm.js'});
+			var f = d.getElementsByTagName(s)[0],j = d.createElement(s),dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-5S7487Q');
+	</script>
+	<!-- /Google.TagManager counter -->
 </body>
 </html>
