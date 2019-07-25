@@ -30,6 +30,18 @@
     <!-- Module -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
 
+	<script type="text/javascript" src="data.json"></script>
+	<script type="text/javascript">
+		function loadJSON () {
+			const myData = JSON.parse(data);
+			console.log(myData.length);
+
+			for (let i in myData) {
+				console.log(`JSON_${i} - ${myData[i].name}, ${myData[i].age}, ${data}`);
+			}
+		};
+	</script>
+
     <!--[if lte IE 8]>
         <script src="https://www.mozilla.org/media/js/libs/html5shiv.98460818858d.js"></script>
         <link rel="stylesheet" type="text/css" href="../src/tools/css/index.css">
@@ -42,7 +54,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body onload="loadJSON()">
     <!--[if IE]>
         <p>Пожалуйста, обновите ваш браузер до новой версии.</p>
     <![endif]-->
@@ -144,49 +156,17 @@
     <!--[if !IE]-->
         <script src="./src/libs/libs.min.js"></script>
         <script src="./src/tools/js/index.js"></script>
-        <script>
+        <script type="text/javascript">
             if (jQuery.browser) {window.$5 = function (html5) {return jQuery(innerShiv(html5, false));}} else {window.$5 = function (html5) {return jQuery(html5);}}
         </script>
     <!--[endif]-->
 
-	<scrtipt type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "WebSite",
-			"url": "https://thewitcher1991.github.io/myWebsite/app/",
-			"potentialAction": {
-				"@type": "SearchAction",
-				"target": "https://thewitcher1991.github.io/myWebsite/search/search?keywords={search_keywords}",
-				"query-input": "required name=search_keywords"
-			}
-		}
-	</scrtipt>
-
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                        w.yaCounter54499777 = new Ya.Metrika({
-                        id:54499777,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
-                    });
-                } catch(e) { }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
+        (function (d, w, c) {(w[c] = w[c] || []).push(function() {try {w.yaCounter54499777 = new Ya.Metrika({id:54499777,clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});} catch(e) { }});
+            var n = d.getElementsByTagName("script")[0],s = d.createElement("script"),f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";s.async = true;s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
+            if (w.opera == "[object Opera]") {d.addEventListener("DOMContentLoaded", f, false);} else { f(); }
         })(document, window, "yandex_metrika_callbacks");
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/54499777" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
