@@ -31,8 +31,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
 
     <!--[if lte IE 8]>
-        <script src="https://www.mozilla.org/media/js/libs/html5shiv.98460818858d.js"></script>    
-        <link rel="stylesheet" type="text/css" href="../src/tools/css/index.css"> 
+        <script src="https://www.mozilla.org/media/js/libs/html5shiv.98460818858d.js"></script>
+        <link rel="stylesheet" type="text/css" href="../src/tools/css/index.css">
     <![endif]-->
 
     <!--[if lt IE 9]>
@@ -47,9 +47,9 @@
         <p>Пожалуйста, обновите ваш браузер до новой версии.</p>
     <![endif]-->
 
-    <!-- Content website --> 
+    <!-- Content website -->
     <main class="wrapper" id="particles-js" role="main">
-        <!-- Header website --> 
+        <!-- Header website -->
         <header id="header" class="header" role="header">
             <section class="header__section" id="home">
                 <div class="container">
@@ -83,7 +83,7 @@
             </section>
         </header>
 
-        <!-- Article website --> 
+        <!-- Article website -->
         <article id="article" class="article" role="article">
             <section class="article__section">
                 <div id="portfolio">
@@ -103,7 +103,7 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo iure perspiciatis rerum, vel distinctio necessitatibus consequatur at beatae cumque quis exercitationem, commodi illo sed esse doloribus. Natus temporibus dolorum incidunt?</p>
                             </div>
                             <div class="right img">
-                                <i class="fas fa-camera"></i>    
+                                <i class="fas fa-camera"></i>
                             </div>
                         </div>
                         <div class="block" id="block-2">
@@ -129,10 +129,10 @@
             </section>
         </article>
 
-        <!-- Footer website --> 
+        <!-- Footer website -->
         <footer id="footer" class="footer" role="footer">
             <section class="footer__section">
-                <!-- Yandex.Metrika informer 
+                <!-- Yandex.Metrika informer
                 <a href="https://metrika.yandex.ru/stat/?id=54499777&amp;from=informer"
                     target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/54499777/3_0_ECECECFF_CCCCCCFF_0_pageviews"
                     style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="54499777" data-lang="ru" /></a>
@@ -147,7 +147,20 @@
         <script>
             if (jQuery.browser) {window.$5 = function (html5) {return jQuery(innerShiv(html5, false));}} else {window.$5 = function (html5) {return jQuery(html5);}}
         </script>
-    <!--[endif]--> 
+    <!--[endif]-->
+
+	<scrtipt type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebSite",
+			"url": "https://thewitcher1991.github.io/myWebsite/app/",
+			"potentialAction": {
+				"@type": "SearchAction",
+				"target": "https://thewitcher1991.github.io/myWebsite/search/search?keywords={search_keywords}",
+				"query-input": "required name=search_keywords"
+			}
+		}
+	</scrtipt>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
