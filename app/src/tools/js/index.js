@@ -1,10 +1,9 @@
-/* eslint-env node, mocha */
-
-// ! Точки с запятой можно не ставить ./src/js/*.{js, jsx}
-
 'use strict';
 
-$(document).ready(function () {
+/* eslint-env node, mocha */
+jQuery(document).ready(function ($) {
+    'use strict';
+
     var _this = this;
 
     var $page = $('html, body');
