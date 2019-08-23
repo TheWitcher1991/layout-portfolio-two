@@ -63,5 +63,10 @@
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "del": "^5.0.0"
+  },
+  "devEngines": {
+    "node": ">= 10.x",
+    "npm": ">= 6.x",
+    "yarn": ">= 1.15.2"
   }
 }
