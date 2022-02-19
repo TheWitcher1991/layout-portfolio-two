@@ -21,7 +21,7 @@
     "url": "git+https://github.com/TheWitcher1991/myWebsite"
   },
   "author": "Ashot Svazyan <ashot.svazyan222@gmail.com>",
-  "license": "MIT",
+  "license": "GNU GPL",
   "current": {
     "os": "win32",
     "arch": "x64"
